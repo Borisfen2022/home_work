@@ -17,3 +17,4 @@ if (isNaN(firstNumber) || isNaN(secondNumber)) {
     alert("Incorrect operation");
   }
 }
+
