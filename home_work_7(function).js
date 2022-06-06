@@ -6,19 +6,19 @@ const div = (a, b) => a / b;
 const quiz = () => {
   const a = +prompt("Введитепервое первое число");
   const b = +prompt("Введитепервое второе число");
-  const c = prompt("Введите операцию");
+  const getOperation = prompt("Введите операцию");
 
   if (isNaN(a) || isNaN(b)) {
     quiz();
   }
 
-  if (c === "+") {
+  if (getOperation === "+") {
     alert(sum(a, b));
-  } else if (c === "-") {
+  } else if (getOperation === "-") {
     alert(min(a, b));
-  } else if (c === "/") {
+  } else if (getOperation === "/") {
     alert(div(a, b));
-  } else if (c === "*") {
+  } else if (getOperation === "*") {
     alert(mult(a, b));
   } else {
     alert('Enter another operation (One of this"+", "-", "/", "*")');
