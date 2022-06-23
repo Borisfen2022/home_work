@@ -9,7 +9,7 @@ const getSortedAnswers = () => {
 
   return answers
     .map((answer) => answer[0].toUpperCase() + answer.slice(1))
-    .sort();
+    .sort((a,b) => a.length - b.length);
 };
 
 console.log(getSortedAnswers());
